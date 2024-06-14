@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-</head>
-<body>
-    <h1>Testing</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Morgan Allen" />
+    <meta
+      name="description"
+      content="Morgan Allen's Home Page for the WDD 131 - Dynamic Web Fundamentals course."
+    />
+    <title>WDD 131 - Dynamic Web Fundamentals - Morgan Allen</title>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <script src="./scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 131: Dynamic Web Fundamentals - Morgan Allen</h1>
+      <nav class="nav">
+        <a href="https://www.linkedin.com/in/morganmakotoallen/">LinkedIn</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang=eng"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="card">
+        <h3>About Me</h3>
+        <div class="about-me">
+          <p class="p-content">
+            My name is Morgan. I am from Mapleton, Utah and I am studying
+            Software Development. I have 5 siblings and I love soccer. I am 24
+            years old. I served my mission in the Ghana Accra West Mission and I
+            loved it. I love to travel around the world, and since I am half
+            Japanese I love to especially visit Japan.
+          </p>
+          <img class="my-img" src="./images/my-pic.jpg" alt="my picture" />
+        </div>
+        <div class="fun-fact">
+          <h4>Fun Fact</h4>
+          <div class="fun-fact-content">
+            <img
+              class="japan-img"
+              src="./images/japan-flag.png"
+              alt="japan flag"
+            />
+            <p class="p-content">
+              Japan has more than 5 million vending machines. Japan is known for
+              its astonishing number of vending machines, which can be found on
+              almost every corner. These machines sell a wide variety of items,
+              from beverages and snacks to more unusual products like fresh
+              eggs, flowers, and even hot meals. The abundance of vending
+              machines is a testament to Japan's love for convenience and
+              efficiency.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h3>Web Dev Resources</h3>
+        <div class="web-dev-links">
+          <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>
+          <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+          <a href="https://www.udemy.com/" target="_blank">Udemy</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        <span id="currentyear"></span>
+        Morgan Allen - USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
