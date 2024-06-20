@@ -9,11 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.noto-sans {
-  font-family: "Noto Sans", sans-serif;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
