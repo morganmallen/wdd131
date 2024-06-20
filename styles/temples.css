@@ -1,5 +1,6 @@
 @media screen and (max-width: 500px){
       #menu {
+          display: block !important;
           font-size: 1.5rem;
           border: 0;
           background: none;
@@ -7,7 +8,6 @@
           position: absolute;
           top: 1rem;
           right: 1rem;
-          display: block;
       }
       
       #menu::before {
@@ -50,7 +50,7 @@
 
       section {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         justify-content: center;
       }
       
