@@ -23,8 +23,14 @@
     <header>
       <h1>Japan</h1>
     </header>
-    <img />
     <main>
+    <div class="hero">
+        <picture>
+          <source srcset="images/japan-large.webp" media="(min-width: 1000px)">
+          <source srcset="images/japan-medium.webp" media="(min-width: 500px)">
+          <img src="images/japan-small.webp" alt="japan photo" width="500" height="250">
+        </picture>
+      </div>
       <div>
         <h2>Data</h2>
         <p class="label">Area:</p>
@@ -36,9 +42,9 @@
         <p class="label">Calling Code:</p>
       </div>
       <div>
-        <div>
+        <div class="weather">
           <h2>Weather</h2>
-          <img />
+          <img class="weather-icon" src="./images/weather-icon.svg"/>
         </div>
 
         <p class="label">Temperature:</p>
