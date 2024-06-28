@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Place Assignment</title>
     <meta
       name="description"
@@ -24,33 +24,49 @@
       <h1>Japan</h1>
     </header>
     <main>
-    <div class="hero">
+      <div class="hero">
         <picture>
-          <source srcset="images/japan-large.webp" media="(min-width: 1000px)">
-          <source srcset="images/japan-medium.webp" media="(min-width: 500px)">
-          <img src="images/japan-small.webp" alt="japan photo" width="500" height="250">
+          <source
+            srcset="images/japan-large.webp"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="images/japan-medium.webp"
+            media="(min-width: 500px)"
+          />
+          <img
+            src="images/japan-small.webp"
+            alt="japan photo"
+            width="500"
+            height="250"
+          />
         </picture>
       </div>
-      <div>
-        <h2>Data</h2>
-        <p class="label">Area:</p>
-        <p class="label">Population:</p>
-        <p class="label">Capital :</p>
-        <p class="label">Languages:</p>
-        <p class="label">Currency:</p>
-        <p class="label">Time Zone:</p>
-        <p class="label">Calling Code:</p>
-      </div>
-      <div>
-        <div class="weather">
-          <h2>Weather</h2>
-          <img class="weather-icon" src="./images/weather-icon.svg"/>
+      <div class="info">
+        <div class="data">
+          <h2 class="data-heading">Data</h2>
+          <p class="label">Area: 377,975 km2</p>
+          <p class="label">Population: 123,970,000</p>
+          <p class="label">Capital: Tokyo</p>
+          <p class="label">Languages: Japanese</p>
+          <p class="label">Currency: Yen</p>
+          <p class="label">Time Zone: UTC+9:00</p>
+          <p class="label">Calling Code: +81</p>
         </div>
-
-        <p class="label">Temperature:</p>
-        <p class="label">Conditions:</p>
-        <p class="label">Wind:</p>
-        <p class="label">Wind Chill:</p>
+        <div class="weather">
+          <div class="weather-heading">
+            <h2>Weather</h2>
+            <img
+              class="weather-icon"
+              alt="weather-icon"
+              src="./images/weather-icon.svg"
+            />
+          </div>
+          <p class="label">Temperature: 10°C</p>
+          <p class="label">Conditions: Clear</p>
+          <p class="label">Wind: 20 km/h</p>
+          <p class="label wind-chill">Wind Chill: </p>
+        </div>
       </div>
     </main>
     <footer class="footer">
