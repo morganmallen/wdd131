@@ -31,3 +31,4 @@ function displayWindChill() {
 
 // Call the displayWindChill function on page load
 document.addEventListener('DOMContentLoaded', displayWindChill);
+  
