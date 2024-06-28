@@ -22,8 +22,8 @@
     color: white;
   }
   
-  header:root {
-    background-color: blue;
+  :root {
+    background-color: white;
     color: black;
   }
 
