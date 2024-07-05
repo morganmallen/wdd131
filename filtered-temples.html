@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Temple Picture Album</title>
+    <meta
+      name="description"
+      content="Morgan Allen's Filtered Temple Album for the WDD 131 - Dynamic Web Fundamentals course."
+    />
+    <meta name="author" content="Morgan Allen" />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    <script src="scripts/filtered-temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Photo Album</h1>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+      </nav>
+      <button id="menu"></button>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <section class="temple-section">
+        <div id="temple-container"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        <span id="currentyear"></span>
+        Morgan Allen - USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
