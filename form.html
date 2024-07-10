@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <meta
+      name="description"
+      content="Morgan Allen's Product Review Form for the WDD 131 - Dynamic Web Fundamentals course."
+    />
+    <meta name="author" content="Morgan Allen" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <!-- <link rel="stylesheet" href="styles/temples-large.css" /> -->
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main>
+      <form method="get" action="review.html">
+        <div class="selectProduct">
+          <select id="productName" name="productName" required>
+            <label for="productName">Product Name</label>
+            <option value="Select a Product..." disabled selected></option>
+          </select>
+        </div>
+
+        <div class="stars">
+          <input
+            type="radio"
+            id="fivestar"
+            name="stars"
+            value="5"
+            required
+          /><label for="fivestar"></label>
+          <input
+            type="radio"
+            id="fourstar"
+            name="stars"
+            value="4"
+            required
+          /><label for="fourstar"></label>
+          <input
+            type="radio"
+            id="threestar"
+            name="stars"
+            value="3"
+            required
+          /><label for="threestar"></label>
+          <input
+            type="radio"
+            id="twostar"
+            name="stars"
+            value="2"
+            required
+          /><label for="twostar"></label>
+          <input
+            type="radio"
+            id="onestar"
+            name="stars"
+            value="1"
+            required
+          /><label for="onestar"></label>
+        </div>
+
+        <div class="date">
+          <input type="date" id="date" name="date" required />
+          <label for="date">Date of Installation</label>
+        </div>
+
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            id="option1"
+            name="option1"
+            value="Durability"
+          />
+          <label for="option1"> Durability</label><br />
+          <input
+            type="checkbox"
+            id="option2"
+            name="option2"
+            value="Ease of Use"
+          />
+          <label for="option2"> Ease of Use</label><br />
+          <input
+            type="checkbox"
+            id="option3"
+            name="option3"
+            value="Performance"
+          />
+          <label for="option3"> Performance</label>
+          <input type="checkbox" id="option4" name="option4" value="Design" />
+          <label for="option4"> Design</label>
+        </div>
+
+        <div class="writtenReview">
+          <textarea id="writtenReview" name="writtenReview"></textarea>
+          <label for="writtenReview">Written Review</label>
+        </div>
+
+        <div class="userName">
+          <input type="text" id="userName" name="userName" />
+          <label for="userName">Your Name</label>
+        </div>
+
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
+    <footer class="footer">
+      <p>
+        <span id="currentYear"></span>
+        Morgan Allen - USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
