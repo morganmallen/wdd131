@@ -1,13 +1,10 @@
-// Set current year in the footer
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
-// Set last modified date in the footer
 const lastModification = new Date(document.lastModified);
 document.getElementById("lastModified").textContent =
   "Last Modification: " + lastModification;
 
-// Define the product array
 const products = [
   {
     id: "fc-1888",
@@ -36,7 +33,6 @@ const products = [
   },
 ];
 
-// Function to populate the product select options
 function populateProductOptions() {
   const productSelect = document.getElementById("productName");
   products.forEach((product) => {
@@ -47,10 +43,8 @@ function populateProductOptions() {
   });
 }
 
-// Call the function when the window loads
 window.onload = populateProductOptions;
 
-// Add the counter logic to the review.html page
 if (window.location.pathname.endsWith("review.html")) {
   let reviewCount = localStorage.getItem("reviewCount") || 0;
   reviewCount++;
