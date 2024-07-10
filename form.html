@@ -10,7 +10,6 @@
     />
     <meta name="author" content="Morgan Allen" />
     <link rel="stylesheet" href="styles/form.css" />
-    <!-- <link rel="stylesheet" href="styles/temples-large.css" /> -->
     <script src="scripts/form.js" defer></script>
   </head>
   <body>
@@ -19,14 +18,14 @@
     </header>
     <main>
       <form method="get" action="review.html">
-        <div class="selectProduct">
+        <div class="form-group selectProduct">
+          <label for="productName">Product Name</label>
           <select id="productName" name="productName" required>
-            <label for="productName">Product Name</label>
-            <option value="Select a Product..." disabled selected></option>
+            <option value="" disabled selected>Select a Product...</option>
           </select>
         </div>
 
-        <div class="stars">
+        <div class="form-group stars">
           <input
             type="radio"
             id="fivestar"
@@ -64,48 +63,58 @@
           /><label for="onestar"></label>
         </div>
 
-        <div class="date">
-          <input type="date" id="date" name="date" required />
+        <div class="form-group date">
           <label for="date">Date of Installation</label>
+          <input type="date" id="date" name="date" required />
         </div>
 
-        <div class="checkbox">
+        <div class="form-group checkbox">
+          <label for="checkbox"
+            >Which features did you find useful in the product?<br />(Check all
+            that apply)</label
+          ><br />
           <input
             type="checkbox"
             id="option1"
             name="option1"
             value="Durability"
-          />
-          <label for="option1"> Durability</label><br />
+          /><label for="option1"> Durability</label><br />
           <input
             type="checkbox"
             id="option2"
             name="option2"
             value="Ease of Use"
-          />
-          <label for="option2"> Ease of Use</label><br />
+          /><label for="option2"> Ease of Use</label><br />
           <input
             type="checkbox"
             id="option3"
             name="option3"
             value="Performance"
-          />
-          <label for="option3"> Performance</label>
-          <input type="checkbox" id="option4" name="option4" value="Design" />
-          <label for="option4"> Design</label>
+          /><label for="option3"> Performance</label><br />
+          <input
+            type="checkbox"
+            id="option4"
+            name="option4"
+            value="Design"
+          /><label for="option4"> Design</label>
         </div>
 
-        <div class="writtenReview">
-          <textarea id="writtenReview" name="writtenReview"></textarea>
+        <div class="form-group writtenReview">
           <label for="writtenReview">Written Review</label>
+          <textarea
+            id="writtenReview"
+            name="writtenReview"
+            rows="4"
+            cols="50"
+          ></textarea>
         </div>
 
-        <div class="userName">
-          <input type="text" id="userName" name="userName" />
+        <div class="form-group userName">
           <label for="userName">Your Name</label>
+          <input type="text" id="userName" name="userName" />
         </div>
 
-        <input type="submit" value="Post Review" />
+        <input type="submit" value="Post Review" class="submitButton" />
       </form>
     </main>
     <footer class="footer">

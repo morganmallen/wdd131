@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #396e94;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+main {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.selectProduct {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars > label {
+    color: #396e94;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0); 
+}
+
+.stars > label:hover {
+    color: #89b3d1;
+}
+
+.stars > label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+}
+
+.writtenReview {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButton {
+    width: 15%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #396e94;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
