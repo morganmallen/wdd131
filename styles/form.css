@@ -92,6 +92,14 @@ input[type="radio"] {
     flex-direction: column;
 }
 
+.form-box {
+    width: 30%;
+}
+.writtenReview-form-box {
+    width: 50%;
+    height: 100px;
+}
+
 .submitButton {
     width: 15%;
 }
