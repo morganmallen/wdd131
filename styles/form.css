@@ -82,7 +82,11 @@ input[type="radio"] {
     flex-direction: column;
 }
 
-.writtenReview {
+.checkbox {
+    margin-top: 5px;
+}
+
+.written-review {
     display: flex;
     flex-direction: column;
 }
@@ -95,12 +99,12 @@ input[type="radio"] {
 .form-box {
     width: 30%;
 }
-.writtenReview-form-box {
+.written-review-form-box {
     width: 50%;
     height: 100px;
 }
 
-.submitButton {
+.submit-button {
     width: 15%;
 }
 

@@ -1,0 +1,17 @@
+@media screen and (max-width: 500px) {
+  .form-box {
+    width: auto;
+    height: 25px;
+  }
+
+  .written-review-form-box {
+    width: auto;
+  }
+
+  .submit-button {
+    width: auto;
+    height: 35px;
+  }
+    }
+  
+  

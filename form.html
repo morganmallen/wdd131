@@ -10,6 +10,7 @@
     />
     <meta name="author" content="Morgan Allen" />
     <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-mobile.css" />
     <script src="scripts/form.js" defer></script>
   </head>
   <body>
@@ -71,7 +72,7 @@
           <input type="date" id="date" name="date" class="form-box" required />
         </div>
 
-        <div class="form-group checkbox">
+        <div class="form-group checkbox-container">
           <label for="option1"
             >Which features did you find useful in the product?<br />(Check all
             that apply)</label
@@ -81,33 +82,37 @@
             id="option1"
             name="option1"
             value="Durability"
+            class="checkbox"
           /><label for="option1"> Durability</label><br />
           <input
             type="checkbox"
             id="option2"
             name="option2"
             value="Ease of Use"
+            class="checkbox"
           /><label for="option2"> Ease of Use</label><br />
           <input
             type="checkbox"
             id="option3"
             name="option3"
             value="Performance"
+            class="checkbox"
           /><label for="option3"> Performance</label><br />
           <input
             type="checkbox"
             id="option4"
             name="option4"
             value="Design"
+            class="checkbox"
           /><label for="option4"> Design</label>
         </div>
 
-        <div class="form-group writtenReview">
-          <label for="writtenReview">Written Review (Optional)</label>
+        <div class="form-group written-review">
+          <label for="written-review">Written Review (Optional)</label>
           <textarea
-            id="writtenReview"
-            name="writtenReview"
-            class="writtenReview-form-box"
+            id="written-review"
+            name="written-review"
+            class="written-review-form-box"
           ></textarea>
         </div>
 
@@ -116,7 +121,7 @@
           <input type="text" id="userName" name="userName" class="form-box"/>
         </div>
 
-        <input type="submit" value="Post Review" class="submitButton" />
+        <input type="submit" value="Post Review" class="submit-button" />
       </form>
     </main>
     <footer class="footer">
