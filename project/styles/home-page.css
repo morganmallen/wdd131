@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #2232c7;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: rgb(224, 172, 49);
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+main {
+  background-color: #0c124a;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 10px;
+  gap: 10px; 
+}
+
+.what-container,
+.how-container,
+.why-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.what-container {
+  grid-column: 1;
+}
+
+.how-container {
+  grid-column: 2;
+}
+
+.why-container {
+  grid-column: 3;
+}
+
+.what-content,
+.how-content,
+.why-content {
+  padding: 10px; 
+}
+
+.what-img {
+  width: 340px;
+  height: 230px;
+}
+
+.how-img {
+  width: 400px;
+  height: 360px;
+}
+
+.why-img {
+  width: 300px;
+  height: 220px;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .how-img {
+    width: 200px;
+    height: 180px;
+  }
+}

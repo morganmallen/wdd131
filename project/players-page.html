@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Players Page</title>
+        <meta
+          name="description"
+          content="Morgan Allen's Players Page for the WDD 131 - Dynamic Web Fundamentals course."
+        />
+        <meta name="author" content="Morgan Allen" />
+        <link rel="stylesheet" href="styles/players-page.css" />
+        <script src="scripts/players-page.js" defer></script>
+      </head>
+<body>
+    <header class="header">
+      <h1>Euros</h1>
+      <nav class="navbar">
+        <a href="home-page.html">Home</a>
+        <a href="teams-page.html">Teams</a>
+        <a href="players-page.html">Players</a>
+      </nav>
+    </header>
+    <main>
+        <section class="players-section">
+            <h2>Best Players of the Tournament</h2>
+            <div class="filter-section">
+              <label for="assistsFilter">Filter by Assists:</label>
+              <select id="assistsFilter">
+                <option value="1">None</option>
+                <option value="2">Most</option>
+                <option value="3">Least</option>
+              </select>
+            </div>
+          <div id="players-container"></div>
+        </section>
+      </main>
+    <footer class="footer">
+      <p>
+        <span id="currentYear"></span>
+        Morgan Allen - USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teams Page</title>
+    <meta
+      name="description"
+      content="Morgan Allen's Teams Page for the WDD 131 - Dynamic Web Fundamentals course."
+    />
+    <meta name="author" content="Morgan Allen" />
+    <link rel="stylesheet" href="styles/teams-page.css" />
+    <script src="scripts/teams-page.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Euros</h1>
+      <nav class="navbar">
+        <a href="home-page.html">Home</a>
+        <a href="teams-page.html">Teams</a>
+        <a href="players-page.html">Players</a>
+      </nav>
+    </header>
+    <main>
+      <section class="teams-section">
+        <h2>Best Teams of the Tournament</h2>
+        <div class="filter-section">
+          <label for="winsFilter">Filter by Wins:</label>
+          <select id="winsFilter">
+            <option value="1">None</option>
+            <option value="2">Most</option>
+            <option value="3">Least</option>
+          </select>
+          <label for="lossesFilter">Filter by Losses:</label>
+          <select id="lossesFilter">
+            <option value="1">None</option>
+            <option value="2">Most</option>
+            <option value="3">Least</option>
+          </select>
+          <label for="drawsFilter">Filter by Draws:</label>
+          <select id="drawsFilter">
+            <option value="1">None</option>
+            <option value="2">Most</option>
+            <option value="3">Least</option>
+          </select>
+        </div>
+        <div id="teams-container"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        <span id="currentYear"></span>
+        Morgan Allen - USA
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
